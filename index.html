@@ -34,6 +34,12 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+   <!-- Bootstrap CSS -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
+  
+  <!-- Snipcart CSS -->
+  <link rel="preconnect" href="https://app.snipcart.com" />
+  <link rel="stylesheet" href="https://snipcart.com" />
 </head>
 
 <body class="index-page">
@@ -119,7 +125,19 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-
+      <!-- SNIPCART TEST-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Store</a>
+          <div class="d-flex">
+            <button class="btn btn-outline-dark snipcart-checkout">
+              Cart (<span class="snipcart-items-count">0</span>) - 
+              <span class="snipcart-total-price">$0.00</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- SNIPCART TEST-->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span>About Us<br></span>
@@ -571,7 +589,24 @@
       <div class="container">
 
         <div class="row">
-
+          <!-- SNIPCART TEST-->
+          <div class="card" style="width: 18rem;">
+            <img src="product.jpg" class="card-img-top" alt="Product">
+            <div class="card-body">
+              <h5 class="card-title">Awesome Mug</h5>
+              <p class="card-text">$12.00</p>
+              
+              <button class="btn btn-primary snipcart-add-item"
+                data-item-id="mug-1"
+                data-item-price="12.00"
+                data-item-url="/"
+                data-item-name="Awesome Mug"
+                data-item-description="A cool ceramic coffee mug.">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- SNIPCART TEST-->
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
