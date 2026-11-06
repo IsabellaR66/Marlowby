@@ -37,12 +37,20 @@
    <!-- Bootstrap CSS -->
   <link href="https://jsdelivr.net" rel="stylesheet">
   
-  <!-- Snipcart CSS -->
-  <link rel="preconnect" href="https://app.snipcart.com" />
-  <link rel="stylesheet" href="https://snipcart.com" />
 </head>
 
 <body class="index-page">
+  <!-- Set Up SnipCart -->
+   <script>
+    window.SnipcartSettings = {
+        publicApiKey: 'MzU5MjllNmItMjZhNy00NWJkLThkODItNzU0MDdjMmU2MzJiNjM5Mjg4ODMyNTMwOTY3MzM2',
+        loadStrategy: 'on-user-interaction',
+        
+    };
+
+    (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+  </script>
+  <!-- Set Up SnipCart END -->
 
   <header id="header" class="header fixed-top">
 
@@ -125,19 +133,7 @@
 
     <!-- About Section -->
     <section id="about" class="about section">
-      <!-- SNIPCART TEST-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Store</a>
-          <div class="d-flex">
-            <button class="btn btn-outline-dark snipcart-checkout">
-              Cart (<span class="snipcart-items-count">0</span>) - 
-              <span class="snipcart-total-price">$0.00</span>
-            </button>
-          </div>
-        </div>
-      </nav>
-      <!-- SNIPCART TEST-->
+      
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span>About Us<br></span>
@@ -537,6 +533,16 @@
                 <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
               </ul>
               <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <!-- SnipCart Button-->
+               <button class="snipcart-add-item btn btn-primary"
+                  data-item-id="starry-night"
+                  data-item-price="79.99"
+                  data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                  data-item-image="/assets/images/starry-night.jpg"
+                  data-item-name="The Starry Night">
+                  Add to cart
+                </button>
+            <!-- SnipCart Button END-->
             </div>
           </div><!-- End Pricing Item -->
 
@@ -589,24 +595,7 @@
       <div class="container">
 
         <div class="row">
-          <!-- SNIPCART TEST-->
-          <div class="card" style="width: 18rem;">
-            <img src="product.jpg" class="card-img-top" alt="Product">
-            <div class="card-body">
-              <h5 class="card-title">Awesome Mug</h5>
-              <p class="card-text">$12.00</p>
-              
-              <button class="btn btn-primary snipcart-add-item"
-                data-item-id="mug-1"
-                data-item-price="12.00"
-                data-item-url="/"
-                data-item-name="Awesome Mug"
-                data-item-description="A cool ceramic coffee mug.">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-          <!-- SNIPCART TEST-->
+          
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
