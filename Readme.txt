@@ -1,6 +1,6 @@
 Thanks for downloading this template!
 
-Template Name: Day
-Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+Template Name: Arsha
+Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
