@@ -64,6 +64,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#work-process">How it Works</a></li>
           <li><a href="#services">Featured Cities</a></li>
           <li><a href="#team">Local Businesses</a></li>
           <li><a href="#pricing">Subscription Plans</a></li>
@@ -73,7 +74,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#pricing">Get Started</a>
+      <a class="btn-getstarted" href="#work-process">Get Started</a>
 
     </div>
   </header>
@@ -88,8 +89,9 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
             <h1>Marlowby</h1>
             <p>Explore Your City, One Box at a Time</p>
+            <p style="font-size: 16px;">Discover the hidden gems of communities across the country! Marlowby connects you with local businesses through curated boxes filled with unique products, local favorites, and new discoveries.</p>
             <div class="d-flex">
-              <a href="#pricing" class="btn-get-started">Get Started</a>
+              <a href="#work-process" class="btn-get-started">Get Started</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -132,6 +134,81 @@
       </div>
 
     </section><!-- /About Section -->
+
+  
+    <!-- Work Process Section -->
+    <section id="work-process" class="work-process section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>How It Works</h2>
+        <p>From choosing your box to discovering local treasures, we're making it easier than ever to explore something new.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-1.webp" alt="Step 1" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">01</div>
+                <h3>Choose Your Box</h3>
+                <p>Explore our subscription plans and select the one that best fits your intrests and budget.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                  
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-2.webp" alt="Step 2" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">02</div>
+                <h3>Discover Local Busnisses</h3>
+                <p>We bring together unique products from local businesses and creators across different communities.</p>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="steps-item">
+              <div class="steps-image">
+                <img src="assets/img/steps/steps-3.webp" alt="Step 3" class="img-fluid" loading="lazy">
+              </div>
+              <div class="steps-content">
+                <div class="steps-number">03</div>
+                <h3>Enjoy Your Box</h3>
+                <p>Receive your monthly collection and support small businesses along the way.</p>
+                <a class="btn btn-primary" href="#pricing">Buy Now</a>
+                <div class="steps-features">
+                  <div class="feature-item">
+                    
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Steps Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Work Process Section -->
 
 
 <!-- Services Section -->
@@ -285,6 +362,7 @@
       </div>
 
     </section><!-- /Team Section -->
+
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
@@ -500,7 +578,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Create Account</button>
+                  <button onclick="showAlert()" type = submit>Create Account</button>
                 </div>
 
               </div>
@@ -519,7 +597,7 @@
 
 
     <div class="container footer-top">
-      <div class="row gy-4">
+      <div class="row gy-3">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
             <span class="sitename">Marlowby</span>
@@ -536,20 +614,12 @@
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#work-process">Services</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
@@ -596,7 +666,11 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    function showAlert() {
+      alert("Congratulations! You are now apart of our community. Thank you for signing up!");
+    }
+  </script>
 </body>
 
 </html>
